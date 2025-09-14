@@ -1,0 +1,312 @@
+.home-container {
+  font-family: "Lora", serif;
+  color: #333;
+}
+
+.hero {
+  background: url("/images/VITRINE.jpg") center/cover no-repeat;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.7);
+  margin-top: -18px;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.5em;
+}
+
+/* === Polices === */
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #fff;
+  color: #111;
+}
+
+/* === Section Catégories === */
+.category-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 10%;
+  gap: 60px;
+}
+
+.category-section.reverse {
+  flex-direction: row-reverse;
+}
+
+.cat-image {
+  width: 50%;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.cat-text {
+  flex: 1;
+  text-align: left;
+}
+
+.cat-title {
+  font-family: "Playfair Display", serif;
+  font-size: 3.2em;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.cat-subtitle {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: #444;
+}
+
+/* === Effet doré === */
+.gold-text {
+  background: linear-gradient(90deg, #b8860b, #ffd700, #b8860b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-discover {
+  display: inline-block;
+  padding: 14px 40px;
+  font-size: 1.1em;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.gold-btn {
+  background: linear-gradient(90deg, #b8860b, #ffd700);
+  color: #111;
+  border: none;
+}
+
+.gold-btn:hover {
+  background: linear-gradient(90deg, #ffd700, #b8860b);
+  transform: translateY(-2px);
+}
+
+.order-steps {
+  background: #f9f9f9;
+  padding: 60px 20px;
+}
+
+.order-steps h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.order-steps ol {
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+/* === Section Commander === */
+.how-to-order {
+  background: #fafafa;
+  padding: 100px 10%;
+  text-align: center;
+}
+
+.how-to-order h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.how-subtitle {
+  font-size: 1.2em;
+  margin-bottom: 60px;
+  color: #555;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+.step {
+  background: white;
+  padding: 40px 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.step:hover {
+  transform: translateY(-8px);
+}
+
+.step-number {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 20px;
+  background: linear-gradient(90deg, #b8860b, #ffd700);
+  color: #111;
+  font-size: 1.6em;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-title {
+  font-family: "Playfair Display", serif;
+  font-size: 1.4em;
+  margin-bottom: 15px;
+}
+
+.step-text {
+  font-size: 1em;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* === Nos Garanties === */
+.guarantees {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 80px 10%;
+  background: #fff;
+  text-align: center;
+}
+
+.guarantee {
+  padding: 20px;
+}
+
+.guarantee-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.guarantee h4 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.guarantee p {
+  font-size: 0.95em;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Responsive : 2 colonnes sur mobile */
+@media (max-width: 900px) {
+  .guarantees {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .guarantees {
+    grid-template-columns: 1fr;
+  }
+}
+.section-title {
+  text-align: center;
+  font-size: 2.2rem; /* Gros titre */
+  font-weight: 700;
+  margin-bottom: 2px;
+  /* Même style luxe */
+}
+.collection-hero {
+  position: relative;
+  height: 50vh;
+  overflow: hidden;
+}
+
+.collection-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
+.collection-hero .hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
+}
+
+.collection-hero h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.collection-section {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.section-subtitle {
+  font-size: 1.1em;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.product-card h3 {
+  margin: 15px;
+  font-size: 1.2em;
+  font-family: "Playfair Display", serif;
+}
+
+.collection-note {
+  background: #fafafa;
+  padding: 60px 15%;
+  font-size: 1.1em;
+  text-align: center;
+  color: #444;
+  font-style: italic;
+}
+.price {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #b8860b; /* doré luxe */
+  margin-bottom: 15px;
+}
